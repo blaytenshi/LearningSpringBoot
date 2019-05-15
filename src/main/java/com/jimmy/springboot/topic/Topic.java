@@ -1,7 +1,15 @@
 package com.jimmy.springboot.topic;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+// tells jpa to create a table called topic
+@Entity
 public class Topic {
+
+    @Id
     private String id;
+    // knows to create these as columns
     private String name;
     private String description;
 
